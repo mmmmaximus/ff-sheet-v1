@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Adventurer!</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- save game progress -------------------------------->
+    <button id="save">Save progress</button>
+
+    <!-- load game progress --------------------------------->
+    <button id="load">Load save</button>
+
+    <!-- delete game progress --------------------------------->
+    <button id="deleteSave">Delete save file</button>
+
+    <!-- stats----------------------------------->
+    <div id="stats">
+        <!-- Skill stat ---------------------------------->
+        <div>Skill</div>
+        <span id="initialSkill"></span>
+        <div class="initialButton">
+            <button id="increaseInitialSkill">+initial</button>
+            <button id="decreaseInitialSkill">-initial</button>
+        </div>
+        <span>Current:</span>
+        <input type="number" id="skill" min="0">
+        <br><br>
+
+        <!-- Stamina stat ---------------------------------->
+        <div>Stamina</div>
+        <span id="initialStamina"></span>
+        <div class="initialButton">
+            <button id="increaseInitialStamina">+initial</button>
+            <button id="decreaseInitialStamina">-initial</button>
+        </div>
+        <span>Current:</span>
+        <input type="number" id="stamina" min="0">
+        <br><br>
+        
+        <!-- Luck stat ---------------------------------->
+        <div>Luck</div>
+        <span id="initialLuck"></span>
+        <div class="initialButton">
+            <button id="increaseInitialLuck">+initial</button>
+            <button id="decreaseInitialLuck">-initial</button>
+        </div>
+        <span>Current:</span>
+        <input type="number" id="luck" min="0">
+        <br>
+    </div>
+
+    <!-- add additional stats button-------------------------------------->
+    <button id="addAdditionalStat">Add additional stat</button>
+
+    <!-- roll initial stat button ---------------------------------->
+    <button id="rollInitial">Roll initial stats</button>
+    <p id="lockedText"></p>
+    
+    <!-- lock stat button ---------------------------------->
+    <button id="lockInitial">Lock initial stats</button>
+    <br>
+
+    <!-- test luck ---------------------------------->
+    <button id="testLuck">Test luck</button>
+    <br>
+
+    <!-- roll die or dice ---------------------------------->
+    <button id="rolldie">Roll 1 die</button>
+    <button id="rolldice">Roll 2 dice</button>
+    <br><br>
+    
+    <!-- fight mechanic --------------------------------->
+    <div>
+        Enemy
+
+        <!-- add enemy -->
+        <button id="addEnemyInput">Add enemy</button>
+    </div>
+
+    <!-- enemy stats -->
+    <div id="allEnemies">
+        <div class="enemy">
+            <span>Skill</span>
+            <input type="number" class="enemySkill" min="0">
+            <br>
+            <span>Stamina</span>
+            <input type="number" class="enemyStamina" min="0">
+        </div>
+    </div>
+
+    <!-- fight -->
+    <button id="fight">Fight</button>
+
+    <!-- use luck in battle -->
+    <button id="useLuck">Use luck</button>
+    <p id="battleText"></p>   
+    <br>
+    
+    <div>Gold</div> 
+    <input type="number" id="gold" min="0">
+    
+    <div>Provisions</div>
+    <input type="number" id="provisions" min="0">
+    <button id="useProvisions">Use provisions</button>
+    
+    <div>Inventory</div>
+    <textarea rows="6" id="inventory"></textarea>
+    
+    <div>Notes</div>
+    <textarea rows="6" id="notes"></textarea>
+</body>
+</html>
